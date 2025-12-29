@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแนะนำตัว(CSS)</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Element Selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+}
+
+/* ID Selector */
+#main-header {
+    background-color: #dbe9ff;
+    padding: 20px;
+    border-bottom: 3px solid #003366;
+}
+
+/* Class Selector */
+.highlight {
+    color: #d10000;
+    font-weight: bold;
+}
+
+/* property */
+nav {
+    background-color: #003366;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- เมนูนำทาง -->
+    <nav align="center">
+        <a href="#about">เกี่ยวกับ</a> |
+        <a href="#skills">ทักษะ</a> |
+        <a href="#portfolio">สิ่งที่ชอบ</a> |
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+<hr>
+
+    <!-- ส่วนแนะนำตัว -->
+    <header align="center">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocL9FH7HmiMWbDJirIi_x8GZL56hGx6CtYIJH8HIqFdu_mHQezo=s324-c-no"
+             alt="รูปโปรไฟล์"
+             width="120">
+        <h1>นายบูรพา ประทีปรัตน์</h1>
+        <p>นักศึกษาวิศวกรรมซอฟต์แวร์ | มทร.ล้านนา เชียงใหม่</p>
+        <p>ชั้นปีที่ 1 (เทียบโอน) ห้อง ข. รหัสนักศึกษา 68543210032-7</p>
+    </header>
+<hr>
+    <!-- เนื้อหาหลัก -->
+    <main>
+        <!-- เกี่ยวกับฉัน -->
+        <section id="about" align="center">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>ผมเป็นนักศึกษาวิศวกรรมซอฟต์แวร์ สนใจด้านการพัฒนาเว็บไซต์</p>
+            <p>ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และทำงานร่วมกับผู้อื่นได้ดี</p>
+
+            <ul align="left">
+                <li>ชื่อเล่น: กาย</li>
+                <li>อายุ: 20 ปี</li>
+                <li>สาขา: วิศวกรรมซอฟต์แวร์</li>
+                <li>ความสามารถ / จุดเด่น
+                    <ul>
+                        <li>คิดวิเคราะห์และแก้ปัญหาได้ดี</li>
+                        <li>เรียนรู้เทคโนโลยีใหม่ได้เร็ว</li>
+                        <li>ทำงานเป็นทีมได้ดี</li>
+                        <li>มีความรับผิดชอบ</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- ทักษะ -->
+        <section id="skills" align="center">
+            <h2>ทักษะ</h2>
+            <ul align="left">
+                <li>Python : ดี</li>
+                <li>HTML / CSS : ดี</li>
+                <li>C / C++ : ปานกลาง</li>
+                <li>JavaScript : พื้นฐาน</li>
+                <li>PHP : พื้นฐาน</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- สิ่งที่ชอบ -->
+        <section id="portfolio" align="center">
+            <h2>สิ่งที่ชอบ</h2>
+
+            <table border="1" cellpadding="8" align="center">
+                <thead>
+                    <tr>
+                        <th colspan="4">รายการหนังที่ชอบ</th>
+                    </tr>
+                    <tr>
+                        <th>Movie</th>
+                        <th>ประเภท</th>
+                        <th>รับชมได้ที่</th>
+                        <th>ตัวอย่าง</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reacher</td>
+                        <td>Action / Crime</td>
+                        <td>Prime Video</td>
+                        <td><a href="https://www.youtube.com/watch?v=R3_WAceVhew" target="_blank">ดูตัวอย่าง</a></td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter</td>
+                        <td>Fantasy</td>
+                        <td>HBO Max</td>
+                        <td><a href="https://www.youtube.com/watch?v=w81GvNtsKp8" target="_blank">ดูตัวอย่าง</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ส่วนติดต่อ -->
+        <section id="contact">
+            <h2>ติดต่อฉัน</h2>
+
+            <form>
+                <p>
+                    <label>ชื่อของคุณ<br>
+                        <input type="text" name="name">
+                    </label>
+                </p>
+
+                <p>
+                    <label>อีเมล<br>
+                        <input type="email" name="email">
+                    </label>
+                </p>
+
+                <p>
+                    <label>ข้อความ<br>
+                        <textarea name="message" rows="4"></textarea>
+                    </label>
+                </p>
+
+                <button type="submit">ส่งข้อความ</button>
+                <button type="reset">รีเซ็ต</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ส่วนท้ายเว็บไซต์ -->
+    <footer align="center">
+        <a href="https://www.instagram.com/noah_guy88/" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/burapa.prateeprat.2024/" target="_blank">Facebook</a>
+    </footer>
+
+</body>
+</html>
