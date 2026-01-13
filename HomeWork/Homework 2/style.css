@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+}
+
+/* ID Selector */
+#main-header {
+    background-color: #dbe9ff;
+    padding: 20px;
+    border-bottom: 3px solid #003366;
+}
+
+/* Class Selector */
+.highlight {
+    color: #d10000;
+    font-weight: bold;
+}
+
+/* property */
+nav {
+    background-color: #003366;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #003366;
+    color: #f2f6ff;
+    padding: 10px;
+    font-size: 14px;
+}

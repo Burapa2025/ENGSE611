@@ -1,0 +1,38 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 220px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s;
+            color: #000000;
+        }
+
+        .card:hover {
+            transform: scale(1.20);
+        }
+
+        /* สีของแต่ละการ์ด */
+        .card1 {
+            background: #C9CCD1;
+        }
+
+        .card2 {
+            background: #F2F2F0;
+        }
+
+        .card3 {
+            background: #B9BDC2;
+        }
